@@ -37,9 +37,23 @@
 			],
 			"owner": 0,
 			"folders_order": [
-				"27e8f8df-39e0-c7b2-10f1-6ab508e8ce86"
+				"27e8f8df-39e0-c7b2-10f1-6ab508e8ce86",
+				"cb6eb63f-c916-d1e4-8571-17d5ec36eb1d"
 			],
 			"id": "56c0662a-ba45-2550-9155-84784268fff1"
+		},
+		{
+			"name": "swagger",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"2f636ca1-7252-46c0-9901-fd7fbefcb0e5",
+				"5d6519c4-8119-4f0c-ac0e-5e14ebee4263"
+			],
+			"owner": 0,
+			"folder": "56c0662a-ba45-2550-9155-84784268fff1",
+			"folders_order": [],
+			"id": "cb6eb63f-c916-d1e4-8571-17d5ec36eb1d"
 		}
 	],
 	"folders_order": [
@@ -183,6 +197,30 @@
 			"folder": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86"
 		},
 		{
+			"id": "2f636ca1-7252-46c0-9901-fd7fbefcb0e5",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/swagger-ui.html",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "ui",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1591479262105,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "cb6eb63f-c916-d1e4-8571-17d5ec36eb1d"
+		},
+		{
 			"id": "35b422c2-2f66-2d73-4e94-25d386782236",
 			"headers": "",
 			"headerData": [],
@@ -262,6 +300,30 @@
 			"responses": [],
 			"rawModeData": "{\n\t\"firstName\": \"Klary\",\n\t\"lastName\": \"Lozano\",\n\t\"age\": 26,\n\t\"typeDocument\": \"dni\",\n\t\"idDocument\": \"87654321\"\n}",
 			"collection_id": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee"
+		},
+		{
+			"id": "5d6519c4-8119-4f0c-ac0e-5e14ebee4263",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/v2/api-docs",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "api-docs",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1591479313164,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "cb6eb63f-c916-d1e4-8571-17d5ec36eb1d"
 		},
 		{
 			"id": "aa67dc8b-c3f1-1d57-ab33-e726a864d788",
