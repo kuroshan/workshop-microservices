@@ -27,6 +27,7 @@ public class PersonController {
 
   @GetMapping(value = "")
   public List<Person> listPeople() {
+    log.info("consult data of registered persons");
     return personService.findAllPeople();
   }
 
