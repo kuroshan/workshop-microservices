@@ -9,7 +9,7 @@ public interface PersonService {
 
   Person createPerson(Person entity);
   List<Person> findAllPeople();
-  Optional<Person> findByIdPerson(Long id);
+  Person findByIdPerson(Long id);
   Person updatePerson(Person entity);
   void deletePerson(Long id);
 

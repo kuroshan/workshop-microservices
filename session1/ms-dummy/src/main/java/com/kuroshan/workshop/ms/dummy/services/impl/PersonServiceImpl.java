@@ -6,6 +6,7 @@ import com.kuroshan.workshop.ms.dummy.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
@@ -26,8 +27,13 @@ public class PersonServiceImpl implements PersonService {
   }
 
   @Override
-  public Optional<Person> findByIdPerson(Long id) {
-    return personRepository.findById(id);
+  public Person findByIdPerson(Long id) {
+    Optional<Person> optEntity = personRepository.findById(id);
+    if (optEntity.isPresent()) {
+      return optEntity.get();
+    } else {
+      throw new EntityNotFoundException(String.format("person with id %d not found", id));
+    }
   }
 
   @Override
@@ -37,6 +43,8 @@ public class PersonServiceImpl implements PersonService {
       optEntity.get().setFirstName(entity.getFirstName());
       optEntity.get().setLastName(entity.getLastName());
       entity = personRepository.save(optEntity.get());
+    } else {
+      throw new EntityNotFoundException(String.format("person with id %d not found", entity.getId()));
     }
     return entity;
   }

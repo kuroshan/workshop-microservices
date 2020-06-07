@@ -11,9 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 
 @Slf4j
 @RestController
@@ -24,7 +23,7 @@ public class PersonController {
   private PersonService personService;
 
   @PostMapping(value = "")
-  public ResponseEntity<Person> registerPeople(@RequestBody Person person) {
+  public ResponseEntity<Person> registerPeople(@Valid @RequestBody Person person) {
     return new ResponseEntity<Person>(personService.createPerson(person), HttpStatus.CREATED);
   }
 
@@ -43,8 +42,8 @@ public class PersonController {
 
   @GetMapping(value = "/{id}")
   public ResponseEntity<Person> getPerson(@PathVariable long id) {
-    Optional<Person> optPerson = personService.findByIdPerson(id);
-    return new ResponseEntity<Person>(optPerson.isPresent()?optPerson.get():Person.builder().build(), HttpStatus.OK);
+    Person person = personService.findByIdPerson(id);
+    return new ResponseEntity<Person>(person, HttpStatus.OK);
   }
 
   @PostMapping(value = "/{id}")
