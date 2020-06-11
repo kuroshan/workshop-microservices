@@ -2,8 +2,6 @@ package com.kuroshan.workshop.ms.hr.employees.dtos;
 
 import lombok.*;
 
-import java.sql.Time;
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -22,8 +20,6 @@ public class EmployeeResponse {
   private String email;
 
   private String phoneNumber;
-
-  private Time hireDate;
 
   private Long departmentId;
 
