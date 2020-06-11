@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.kuroshan.workshop.ms.hr</groupId>
-	<artifactId>ms-employees</artifactId>
-	<version>1.0.0</version>
-	<name>Microservice Employees</name>
-	<description>HR Microservice Employees</description>
+	<artifactId>ms-areas</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Microservice Areas</name>
+	<description>HR Microservice Areas</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
