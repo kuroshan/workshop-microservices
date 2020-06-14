@@ -37,6 +37,30 @@
 			"id": "1594634b-9649-bc87-b57e-fea138cccf4c"
 		},
 		{
+			"name": "areas",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"42dfec78-2120-fcab-777c-696d29b6ced3"
+			],
+			"owner": 0,
+			"folder": "ee769ed6-f8b8-b933-f32c-11f3707bba91",
+			"folders_order": [],
+			"id": "f50c5d99-f5bc-f67e-7266-11ce87bf140e"
+		},
+		{
+			"name": "discovery server",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"8e9553b9-20b0-01aa-96a4-a7f22c3d3451"
+			],
+			"owner": 0,
+			"folder": "ee769ed6-f8b8-b933-f32c-11f3707bba91",
+			"folders_order": [],
+			"id": "d7801198-2050-4909-f0b8-a48f7b9c398f"
+		},
+		{
 			"name": "employees",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -47,6 +71,18 @@
 			"folder": "d5e6c028-7b39-14ae-3df8-cbd7cd363fe5",
 			"folders_order": [],
 			"id": "af291cbf-f1b2-4b44-138c-df81f6f9f52e"
+		},
+		{
+			"name": "employees",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"a1833329-c038-5c5a-fe11-597d55fb3d20"
+			],
+			"owner": 0,
+			"folder": "ee769ed6-f8b8-b933-f32c-11f3707bba91",
+			"folders_order": [],
+			"id": "e202563a-1201-5eec-69c4-62e7cd190c50"
 		},
 		{
 			"name": "session1",
@@ -79,6 +115,19 @@
 			"id": "d5e6c028-7b39-14ae-3df8-cbd7cd363fe5"
 		},
 		{
+			"name": "session3",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [],
+			"owner": 0,
+			"folders_order": [
+				"f50c5d99-f5bc-f67e-7266-11ce87bf140e",
+				"d7801198-2050-4909-f0b8-a48f7b9c398f",
+				"e202563a-1201-5eec-69c4-62e7cd190c50"
+			],
+			"id": "ee769ed6-f8b8-b933-f32c-11f3707bba91"
+		},
+		{
 			"name": "swagger",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -94,7 +143,8 @@
 	],
 	"folders_order": [
 		"56c0662a-ba45-2550-9155-84784268fff1",
-		"d5e6c028-7b39-14ae-3df8-cbd7cd363fe5"
+		"d5e6c028-7b39-14ae-3df8-cbd7cd363fe5",
+		"ee769ed6-f8b8-b933-f32c-11f3707bba91"
 	],
 	"timestamp": 1591414881532,
 	"owner": 0,
@@ -308,6 +358,30 @@
 			"folder": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86"
 		},
 		{
+			"id": "42dfec78-2120-fcab-777c-696d29b6ced3",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9092/ms-hr-areas/v1/departments/custom/10",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:9092/ms-hr-areas/v1/departments/custom/10",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1592165639705,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "f50c5d99-f5bc-f67e-7266-11ce87bf140e"
+		},
+		{
 			"id": "56eeb6c8-b7c6-4828-0ead-046cbac4a0dd",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
@@ -410,6 +484,54 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "1594634b-9649-bc87-b57e-fea138cccf4c"
+		},
+		{
+			"id": "8e9553b9-20b0-01aa-96a4-a7f22c3d3451",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8761",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8761",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1592165574972,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "d7801198-2050-4909-f0b8-a48f7b9c398f"
+		},
+		{
+			"id": "a1833329-c038-5c5a-fe11-597d55fb3d20",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9091/ms-hr-employees/v1/employees/101",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:9091/ms-hr-employees/v1/employees/101",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1592166743858,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "e202563a-1201-5eec-69c4-62e7cd190c50"
 		},
 		{
 			"id": "aa67dc8b-c3f1-1d57-ab33-e726a864d788",
