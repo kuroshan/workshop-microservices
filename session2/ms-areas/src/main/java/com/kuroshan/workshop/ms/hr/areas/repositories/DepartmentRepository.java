@@ -10,14 +10,9 @@ import java.util.List;
 
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
 
-  @Query("SELECT d FROM Department d  WHERE UPPER(d.departmentName) like UPPER(CONCAT('%',:name,'%'))")
-  List<Department> findByDepartmentName(@Param("name") String name);
+  List<Department> findByDepartmentName(String name);
 
-  @Query("SELECT d.departmentId as departmentId, d.departmentName as departmentName, " +
-                "l.locationId as locationId, l.streetAddress as streetAddress " +
-           "FROM Department d, Location l " +
-          "WHERE d.location.locationId = l.locationId " +
-            "AND d.departmentId = :id")
-  Tuple findDepartment(@Param("id") long id);
+  @Query("SELECT d FROM Department d  WHERE UPPER(d.departmentName) like UPPER(CONCAT('%',:name,'%'))")
+  List<Department> searchByDepartmentName(@Param("name") String name);
 
 }

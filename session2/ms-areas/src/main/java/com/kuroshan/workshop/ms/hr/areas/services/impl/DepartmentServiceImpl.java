@@ -1,5 +1,6 @@
 package com.kuroshan.workshop.ms.hr.areas.services.impl;
 
+import com.kuroshan.workshop.ms.hr.areas.dao.AreaDao;
 import com.kuroshan.workshop.ms.hr.areas.models.Department;
 import com.kuroshan.workshop.ms.hr.areas.repositories.DepartmentRepository;
 import com.kuroshan.workshop.ms.hr.areas.services.DepartmentService;
@@ -16,27 +17,35 @@ import java.util.List;
 public class DepartmentServiceImpl implements DepartmentService {
 
   @Autowired
-  private DepartmentRepository departamentRepository;
+  private DepartmentRepository departmentRepository;
+
+  @Autowired
+  private AreaDao areaDao;
 
   @Override
   @Transactional(readOnly = true)
   public List<Department> findAll() {
-    return departamentRepository.findAll();
+    return departmentRepository.findAll();
   }
 
   @Override
   public Department findById(long id) {
-    return departamentRepository.findById(id).orElse(null);
+    return departmentRepository.findById(id).orElse(null);
+  }
+
+  @Override
+  public Tuple findByIdCustom(long id) {
+    return areaDao.findDepartmentByIdCustom(id);
   }
 
   @Override
   public List<Department> findByDepartmentName(String name) {
-    return departamentRepository.findByDepartmentName(name);
+    return departmentRepository.findByDepartmentName(name);
   }
 
   @Override
-  public Tuple findDepartment(long id) {
-    return departamentRepository.findDepartment(id);
+  public List<Department> searchByDepartmentName(String name) {
+    return departmentRepository.searchByDepartmentName(name);
   }
 
 }

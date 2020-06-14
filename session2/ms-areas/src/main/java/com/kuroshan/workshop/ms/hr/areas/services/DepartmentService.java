@@ -11,8 +11,10 @@ public interface DepartmentService {
 
   Department findById(long id);
 
+  Tuple findByIdCustom(long id);
+
   List<Department> findByDepartmentName(String name);
 
-  Tuple findDepartment(long id);
+  List<Department> searchByDepartmentName(String name);
 
 }

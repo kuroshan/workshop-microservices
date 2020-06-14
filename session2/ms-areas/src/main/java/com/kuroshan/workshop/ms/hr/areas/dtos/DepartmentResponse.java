@@ -19,4 +19,12 @@ public class DepartmentResponse {
 
   private String streetAddress;
 
+  private String countryId;
+
+  private String countryName;
+
+  private long regionId;
+
+  private String regionName;
+
 }

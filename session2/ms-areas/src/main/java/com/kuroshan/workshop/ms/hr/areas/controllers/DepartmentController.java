@@ -5,11 +5,13 @@ import com.kuroshan.workshop.ms.hr.areas.models.Department;
 import com.kuroshan.workshop.ms.hr.areas.services.DepartmentService;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.Tuple;
-import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -24,25 +26,45 @@ public class DepartmentController {
   private ModelMapper modelMapper;
 
   @GetMapping(value = "")
-  public List<Department> listDepartaments(@RequestParam(value = "name", required = false) String name) {
-    List<Department> list = new ArrayList<Department>();
+  @ResponseStatus(HttpStatus.OK)
+  public List<DepartmentResponse> listDepartaments(@RequestParam(value = "name", required = false) String name) {
+    List<Department> list;
     if (name != null) {
-      list = departamentService.findByDepartmentName(name);
+      list = departamentService.searchByDepartmentName(name);
     } else {
       list = departamentService.findAll();
     }
-    return list;
+    return modelMapper.map(list, new TypeToken<List<DepartmentResponse>>() {}.getType());
   }
 
   @GetMapping(value = "/{id}")
-  public Department getDepartament(@PathVariable long id) {
-    return departamentService.findById(id);
+  public ResponseEntity getDepartment(@PathVariable long id) {
+    Department d = departamentService.findById(id);
+    return d != null
+        ? new ResponseEntity(d, HttpStatus.OK)
+        : new ResponseEntity(HttpStatus.NO_CONTENT);
   }
 
-  @GetMapping(value = "/tuple/{id}")
-  public DepartmentResponse getDepartamentTuple(@PathVariable long id) {
-    Tuple t = departamentService.findDepartment(id);
-    return DepartmentResponse.builder().departmentName(t.get("departmentName").toString()).build();
+  @GetMapping(value = "/custom/{id}")
+  public ResponseEntity getDepartmentCustom(@PathVariable long id) {
+    Tuple t = departamentService.findByIdCustom(id);
+    return t != null
+        ? new ResponseEntity(builderResponse(t), HttpStatus.OK)
+        : new ResponseEntity(HttpStatus.NO_CONTENT);
+  }
+
+  private DepartmentResponse builderResponse(Tuple t) {
+    return DepartmentResponse
+        .builder()
+        .departmentId(t.get("departmentId", Long.class))
+        .departmentName(t.get("departmentName", String.class))
+        .locationId(t.get("locationId", Long.class))
+        .streetAddress(t.get("streetAddress", String.class))
+        .countryId(t.get("countryId", String.class))
+        .countryName(t.get("countryName", String.class))
+        .regionId(t.get("regionId", Long.class))
+        .regionName(t.get("regionName", String.class))
+        .build();
   }
 
 }
