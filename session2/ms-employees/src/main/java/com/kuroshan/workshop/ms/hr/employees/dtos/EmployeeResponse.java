@@ -21,6 +21,6 @@ public class EmployeeResponse {
 
   private String phoneNumber;
 
-  private Long departmentId;
+  private DepartmentResponse department;
 
 }
