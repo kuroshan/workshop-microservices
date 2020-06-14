@@ -25,6 +25,30 @@
 			"id": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86"
 		},
 		{
+			"name": "areas",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"74ed3e8e-880f-7e99-4d32-7b9cdc89daac"
+			],
+			"owner": 0,
+			"folder": "d5e6c028-7b39-14ae-3df8-cbd7cd363fe5",
+			"folders_order": [],
+			"id": "1594634b-9649-bc87-b57e-fea138cccf4c"
+		},
+		{
+			"name": "employees",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"6ccee621-d4cf-fe71-6b09-dc83c6ae5cef"
+			],
+			"owner": 0,
+			"folder": "d5e6c028-7b39-14ae-3df8-cbd7cd363fe5",
+			"folders_order": [],
+			"id": "af291cbf-f1b2-4b44-138c-df81f6f9f52e"
+		},
+		{
 			"name": "session1",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -43,6 +67,18 @@
 			"id": "56c0662a-ba45-2550-9155-84784268fff1"
 		},
 		{
+			"name": "session2",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [],
+			"owner": 0,
+			"folders_order": [
+				"1594634b-9649-bc87-b57e-fea138cccf4c",
+				"af291cbf-f1b2-4b44-138c-df81f6f9f52e"
+			],
+			"id": "d5e6c028-7b39-14ae-3df8-cbd7cd363fe5"
+		},
+		{
 			"name": "swagger",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -57,7 +93,8 @@
 		}
 	],
 	"folders_order": [
-		"56c0662a-ba45-2550-9155-84784268fff1"
+		"56c0662a-ba45-2550-9155-84784268fff1",
+		"d5e6c028-7b39-14ae-3df8-cbd7cd363fe5"
 	],
 	"timestamp": 1591414881532,
 	"owner": 0,
@@ -101,6 +138,7 @@
 			"headers": "",
 			"headerData": [],
 			"url": "http://localhost:8080/actuator/shutdown",
+			"folder": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -326,6 +364,54 @@
 			"folder": "cb6eb63f-c916-d1e4-8571-17d5ec36eb1d"
 		},
 		{
+			"id": "6ccee621-d4cf-fe71-6b09-dc83c6ae5cef",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9091/ms-hr-employees/v1/employees/101",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:9091/ms-hr-employees/v1/employees/101",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1592107722449,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "af291cbf-f1b2-4b44-138c-df81f6f9f52e"
+		},
+		{
+			"id": "74ed3e8e-880f-7e99-4d32-7b9cdc89daac",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9092/ms-hr-areas/v1/departments/custom/10",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:9092/ms-hr-areas/v1/departments/custom/10",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1592107671995,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "1594634b-9649-bc87-b57e-fea138cccf4c"
+		},
+		{
 			"id": "aa67dc8b-c3f1-1d57-ab33-e726a864d788",
 			"headers": "",
 			"headerData": [],
@@ -355,6 +441,7 @@
 			"headers": "",
 			"headerData": [],
 			"url": "http://localhost:8080/actuator/health",
+			"folder": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
