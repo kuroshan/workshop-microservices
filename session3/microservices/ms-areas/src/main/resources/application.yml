@@ -14,7 +14,7 @@ spring:
 
 server:
   servlet:
-    context-path: /ms-hr-areas/v1
+    context-path: /v1
   port: 9092
 
 eureka:
