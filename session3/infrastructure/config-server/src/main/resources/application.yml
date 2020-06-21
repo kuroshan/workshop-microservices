@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ms-hr-config-server
+
+server:
+  port: 8888
