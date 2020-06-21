@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: ms-hr-config-server
   cloud:
     config:
       server:
