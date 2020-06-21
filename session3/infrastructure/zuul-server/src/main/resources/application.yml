@@ -20,7 +20,7 @@ zuul:
       strip-prefix: true
     ms-human-resources-employees:
       service-id: MS-HR-EMPLOYEES
-      path: /hr/employees/**
+      path: /hr/payroll/**
       strip-prefix: true
 
 ribbon:

@@ -13,8 +13,6 @@ spring:
       hibernate.format_sql: true
 
 server:
-  servlet:
-    context-path: /v1
   port: 9092
 
 eureka:
