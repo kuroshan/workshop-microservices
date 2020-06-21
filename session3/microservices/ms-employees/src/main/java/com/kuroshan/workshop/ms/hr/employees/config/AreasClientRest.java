@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface AreasClientRest {
 
   @GetMapping(value = "/departments/custom/{id}")
-  public DepartmentResponse getDepartment(@PathVariable long id);
+  DepartmentResponse getDepartment(@PathVariable long id);
 
 }
