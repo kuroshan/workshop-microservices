@@ -49,6 +49,19 @@
 			"id": "f50c5d99-f5bc-f67e-7266-11ce87bf140e"
 		},
 		{
+			"name": "circuit breaker",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"54a237c3-a1b4-3b29-cc98-3fa3646080b0",
+				"ed747f83-4b61-a487-88cd-f0bdc439b650"
+			],
+			"owner": 0,
+			"folder": "e202563a-1201-5eec-69c4-62e7cd190c50",
+			"folders_order": [],
+			"id": "a24f84ee-abe8-fe75-458b-498157e2dcdf"
+		},
+		{
 			"name": "discovery server",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -81,7 +94,9 @@
 			],
 			"owner": 0,
 			"folder": "ee769ed6-f8b8-b933-f32c-11f3707bba91",
-			"folders_order": [],
+			"folders_order": [
+				"a24f84ee-abe8-fe75-458b-498157e2dcdf"
+			],
 			"id": "e202563a-1201-5eec-69c4-62e7cd190c50"
 		},
 		{
@@ -418,6 +433,30 @@
 			"responses": []
 		},
 		{
+			"id": "54a237c3-a1b4-3b29-cc98-3fa3646080b0",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9091/hystrix",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "hystrix",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593121791838,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "a24f84ee-abe8-fe75-458b-498157e2dcdf"
+		},
+		{
 			"id": "56eeb6c8-b7c6-4828-0ead-046cbac4a0dd",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
@@ -661,6 +700,30 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86"
+		},
+		{
+			"id": "ed747f83-4b61-a487-88cd-f0bdc439b650",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9091/actuator/hystrix.stream",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "actuator/hystrix.stream",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593121839284,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "a24f84ee-abe8-fe75-458b-498157e2dcdf"
 		},
 		{
 			"id": "f035564d-0927-f5dd-e249-d69ccb019b03",
