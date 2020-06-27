@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ms-hr-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kuroshan/workshop-microservices
+          defaultLabel: 11-config-server
+          searchPaths: 
+            - config/discovery-server
+            - config/edge-service
+            - config/employees
+            - config/areas
