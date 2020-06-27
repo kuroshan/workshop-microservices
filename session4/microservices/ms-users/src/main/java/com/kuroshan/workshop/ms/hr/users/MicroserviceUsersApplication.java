@@ -1,4 +1,4 @@
-package com.kuroshan.workshop.ms.hr.ms.users;
+package com.kuroshan.workshop.ms.hr.users;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

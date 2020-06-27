@@ -6,9 +6,10 @@ spring:
       server:
         git:
           uri: https://github.com/kuroshan/workshop-microservices
-          defaultLabel: 11-config-server
+          defaultLabel: 13-security
           searchPaths: 
             - config/discovery-server
             - config/edge-service
             - config/employees
             - config/areas
+            - config/users
