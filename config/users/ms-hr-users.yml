@@ -4,6 +4,10 @@ spring:
     properties:
       hibernate.format_sql: true
 
+logging:
+  level:
+    org.hiberate.SQL: debug
+
 server:
   port: 9093
 
