@@ -18,6 +18,10 @@ zuul:
       service-id: MS-HR-EMPLOYEES
       path: /hr/payroll/**
       strip-prefix: true
+    ms-human-resources-users:
+      service-id: MS-HR-USERS
+      path: /hr/users/**
+      strip-prefix: true
 
 ribbon:
   ConnectTimeout: 3000
