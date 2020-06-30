@@ -3,6 +3,7 @@ package com.kuroshan.workshop.ms.hr.security.server.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
@@ -10,12 +11,19 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.A
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
+import org.springframework.security.oauth2.provider.token.TokenEnhancer;
+import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
+
+import java.util.Arrays;
 
 @Configuration
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
+
+  @Autowired
+  private Environment env;
 
   @Autowired
   private BCryptPasswordEncoder passwordEncoder;
@@ -23,12 +31,21 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
   @Autowired
   private AuthenticationManager authenticationManager;
 
+  @Autowired
+  private InfoAdditionalToken infoAdditionalToken;
+
   @Override
   public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+    TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
+    tokenEnhancerChain
+        .setTokenEnhancers(Arrays.asList(this.infoAdditionalToken,
+                                         this.accessTokenConverter()));
+
     endpoints
         .authenticationManager(this.authenticationManager)
         .tokenStore(this.tokenStore())
-        .accessTokenConverter(this.accessTokenConverter());
+        .accessTokenConverter(this.accessTokenConverter())
+        .tokenEnhancer(tokenEnhancerChain);
   }
 
   @Bean
@@ -39,7 +56,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
   @Bean
   public JwtAccessTokenConverter accessTokenConverter() {
     JwtAccessTokenConverter tokenConverter = new JwtAccessTokenConverter();
-    tokenConverter.setSigningKey("token_secrect_key");
+    tokenConverter.setSigningKey(env.getProperty("security.oauth.jwt.key"));
     return tokenConverter;
   }
 
@@ -47,8 +64,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
   public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
     clients
         .inMemory()
-          .withClient("clientapp")
-            .secret(passwordEncoder.encode("abcdef"))
+          .withClient(env.getProperty("security.oauth.client.id"))
+            .secret(passwordEncoder.encode(env.getProperty("security.oauth.client.secrect")))
             .scopes("read", "write")
             .authorizedGrantTypes("password", "refresh_token")
             .accessTokenValiditySeconds(3600)

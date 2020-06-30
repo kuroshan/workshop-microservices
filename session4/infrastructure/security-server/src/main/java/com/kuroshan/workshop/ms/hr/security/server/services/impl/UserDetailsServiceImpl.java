@@ -2,6 +2,7 @@ package com.kuroshan.workshop.ms.hr.security.server.services.impl;
 
 import com.kuroshan.workshop.ms.hr.security.server.config.UsersClientRest;
 import com.kuroshan.workshop.ms.hr.security.server.models.User;
+import com.kuroshan.workshop.ms.hr.security.server.services.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -16,7 +17,7 @@ import java.util.stream.Collectors;
 
 @Slf4j
 @Service
-public class UserServiceImpl implements UserDetailsService {
+public class UserDetailsServiceImpl implements UserService, UserDetailsService {
 
   @Autowired
   private UsersClientRest usersClientRest;
@@ -46,4 +47,8 @@ public class UserServiceImpl implements UserDetailsService {
               authorities);
   }
 
+  @Override
+  public User findByUsername(String username) {
+    return usersClientRest.findByUsername(username);
+  }
 }
