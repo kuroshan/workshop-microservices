@@ -26,7 +26,6 @@ zuul:
       service-id: MS-HR-SECURITY-SERVER
       path: /hr/security/**
       strip-prefix: true
-    security:
       sensitive-headers:
         - Cookie
         - Set-Cookie
