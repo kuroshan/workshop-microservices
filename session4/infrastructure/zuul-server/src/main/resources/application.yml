@@ -22,6 +22,14 @@ zuul:
       service-id: MS-HR-USERS
       path: /hr/users/**
       strip-prefix: true
+    ms-human-resources-security:
+      service-id: ms-hr-security-server
+      path: /hr/security/**
+      strip-prefix: true
+    security:
+      sensitive-headers:
+        - Cookie
+        - Set-Cookie
 
 ribbon:
   ConnectTimeout: 3000
