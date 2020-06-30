@@ -23,7 +23,7 @@ zuul:
       path: /hr/users/**
       strip-prefix: true
     ms-human-resources-security:
-      service-id: ms-hr-security-server
+      service-id: MS-HR-SECURITY-SERVER
       path: /hr/security/**
       strip-prefix: true
     security:
