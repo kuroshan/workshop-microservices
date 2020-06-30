@@ -655,11 +655,11 @@
 		},
 		{
 			"id": "8e6c3cdf-b667-2e04-a6e2-11e79d108fcb",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTU5MzU1ODA5NCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6IjdiYWY0ZmIwLWJlOWQtNGRhOS04YjU1LTcwZTlkOWUzZjEzYyIsImVtYWlsIjoidXNlckBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRhcHAifQ.ezTlEnKFQ5-4qKcBHc0fs0JvliBAfpNxmvRfGVYiK7o\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTU5MzU1OTc2OCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImEzOGY0MWNhLThkNTktNDhjYy1hMGFlLTczZTcyOTZhNzlmYSIsImVtYWlsIjoidXNlckBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.Z97QdpssWsUOrQL6unMziSetIX_2OGEMs8R5oP5yzRY\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTU5MzU1ODA5NCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6IjdiYWY0ZmIwLWJlOWQtNGRhOS04YjU1LTcwZTlkOWUzZjEzYyIsImVtYWlsIjoidXNlckBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRhcHAifQ.ezTlEnKFQ5-4qKcBHc0fs0JvliBAfpNxmvRfGVYiK7o",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImV4cCI6MTU5MzU1OTc2OCwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6ImEzOGY0MWNhLThkNTktNDhjYy1hMGFlLTczZTcyOTZhNzlmYSIsImVtYWlsIjoidXNlckBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.Z97QdpssWsUOrQL6unMziSetIX_2OGEMs8R5oP5yzRY",
 					"description": "",
 					"enabled": true
 				}
@@ -677,7 +677,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1593554737147,
+			"time": 1593556244382,
 			"name": "http://localhost:9090/api/hr/payroll/employees",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -709,11 +709,11 @@
 		},
 		{
 			"id": "9ae0251f-11ef-44da-a850-3099dc234bb3",
-			"headers": "Authorization: Basic Y2xpZW50YXBwOmFiY2RlZg==\nContent-Type: application/x-www-form-urlencoded\n",
+			"headers": "Authorization: Basic Y2xpZW50X2FwcDphYmNkZWY=\nContent-Type: application/x-www-form-urlencoded\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Basic Y2xpZW50YXBwOmFiY2RlZg==",
+					"value": "Basic Y2xpZW50X2FwcDphYmNkZWY=",
 					"description": "",
 					"enabled": true
 				},
@@ -757,7 +757,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1593554829512,
+			"time": 1593556180649,
 			"name": "get token",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
