@@ -11,7 +11,7 @@ spring:
       hibernate.format_sql: true
 
 server:
-  port: 9092
+  port: 8080
 
 eureka:
   instance:
