@@ -1,5 +1,5 @@
 FROM openjdk:8
 VOLUME "/tmp"
-EXPOSE 8761
-ADD ./target/discovery-server-0.0.1-SNAPSHOT.jar discovery-server.jar
-ENTRYPOINT ["java", "-jar", "discovery-server.jar"]
+EXPOSE 8080
+ADD ./target/ms-areas-0.0.1-SNAPSHOT.jar ms-areas.jar
+ENTRYPOINT ["java", "-jar", "ms-areas.jar"]
