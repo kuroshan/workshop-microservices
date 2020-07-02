@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:oracle:thin:@//db-infra-oracle:1523/XE
+    url: jdbc:oracle:thin:@//db-infra-oracle:1521/XE
     username: hr
     password: hrpw
     driver-class-name: oracle.jdbc.OracleDriver
