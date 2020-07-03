@@ -128,7 +128,7 @@
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
 			"order": [
-				"9ae0251f-11ef-44da-a850-3099dc234bb3"
+				"62d8a8e7-322d-6587-5cf9-45dfa5fb2e34"
 			],
 			"owner": 0,
 			"folder": "b18647be-d262-b989-ec83-60227d05bae7",
@@ -606,6 +606,65 @@
 			"folder": "cb6eb63f-c916-d1e4-8571-17d5ec36eb1d"
 		},
 		{
+			"id": "62d8a8e7-322d-6587-5cf9-45dfa5fb2e34",
+			"headers": "Authorization: Basic Y2xpZW50X2FwcDphYmNkZWY=\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic Y2xpZW50X2FwcDphYmNkZWY=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/security/oauth/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": [
+				{
+					"key": "username",
+					"value": "user",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "/oauth/token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593810316105,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "1960228b-8256-226a-6bee-327ba25608b2"
+		},
+		{
 			"id": "6ccee621-d4cf-fe71-6b09-dc83c6ae5cef",
 			"headers": "",
 			"headerData": [],
@@ -706,62 +765,6 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "d7801198-2050-4909-f0b8-a48f7b9c398f"
-		},
-		{
-			"id": "9ae0251f-11ef-44da-a850-3099dc234bb3",
-			"headers": "Authorization: Basic Y2xpZW50X2FwcDphYmNkZWY=\nContent-Type: application/x-www-form-urlencoded\n",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "Basic Y2xpZW50X2FwcDphYmNkZWY=",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Content-Type",
-					"value": "application/x-www-form-urlencoded",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:9090/api/hr/security/oauth/token",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [
-				{
-					"key": "username",
-					"value": "user",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "password",
-					"value": "123456",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "grant_type",
-					"value": "password",
-					"description": "",
-					"type": "text",
-					"enabled": true
-				}
-			],
-			"dataMode": "urlencoded",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1593556180649,
-			"name": "get token",
-			"description": "",
-			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
-			"responses": []
 		},
 		{
 			"id": "a1833329-c038-5c5a-fe11-597d55fb3d20",
