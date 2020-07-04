@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:oracle:thin:@//infra-database-oracle:1521/XE
+    url: jdbc:oracle:thin:@//database-oracle:1521/XE
     username: hr
     password: hrpw
     driver-class-name: oracle.jdbc.OracleDriver
@@ -18,7 +18,7 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
-      defaultZone: http://infra-microservice-discoveryserver:8761/eureka/
+      defaultZone: http://microservice-discoveryserver:8761/eureka/
 
 info:
   environment: local

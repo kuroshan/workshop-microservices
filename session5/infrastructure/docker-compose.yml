@@ -1,0 +1,47 @@
+version: '3.7'
+services: 
+  database-oracle:
+    image: workshopms-database-oracle:v1
+    ports: 
+      - "1521:1521"
+    restart: always
+    networks: 
+      - workshopms
+  microservice-configserver:
+    image: workshopms-microservice-configserver:v1
+    ports: 
+      - "8888:8888"
+    restart: always
+    networks: 
+      - workshopms
+  microservice-discoveryserver:
+    image: workshopms-microservice-discoveryserver:v1
+    ports: 
+      - "8761:8761"
+    restart: always
+    networks: 
+      - workshopms
+    depends_on: 
+      - microservice-configserver
+  microservice-securityserver:
+    image: workshopms-microservice-securityserver:v1
+    ports: 
+      - "8080:8080"
+    restart: always
+    networks: 
+      - workshopms
+    depends_on: 
+      - microservice-configserver
+      - microservice-discoveryserver
+  microservice-edgeservice:
+    image: workshopms-microservice-edgeservice:v1
+    ports: 
+      - "9090:9090"
+    restart: always
+    networks: 
+      - workshopms
+    depends_on: 
+      - microservice-configserver
+      - microservice-discoveryserver
+networks: 
+  workshopms:

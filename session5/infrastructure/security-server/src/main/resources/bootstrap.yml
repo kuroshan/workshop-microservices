@@ -3,4 +3,4 @@ spring:
     name: ms-hr-security-server
   cloud:
     config:
-      uri: http://infra-microservice-configserver:8888
+      uri: http://microservice-configserver:8888
