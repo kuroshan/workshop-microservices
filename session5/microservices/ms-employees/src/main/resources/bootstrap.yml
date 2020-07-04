@@ -3,4 +3,4 @@ spring:
     name: ms-hr-employees
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://infra-microservice-configserver:8888

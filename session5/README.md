@@ -24,9 +24,10 @@ docker build -t workshopms-microservice-users:v1 .
 docker run -d --name security-microservice-users --network workshopms -p 8081:8080 workshopms-microservice-users:v1
 docker logs -f security-microservice-users
 
+docker build -t workshopms-microservice-areas:v1 .
+docker run -d --name humanresources-microservice-areas --network workshopms -p 8082:8080 workshopms-microservice-areas:v1
+docker logs -f humanresources-microservice-areas
 
-
-
-docker build -t microservice-areas:v1 .
-docker run -d --name ms-hr-areas --network microservices -p 8082:8080 microservice-areas:v1
-docker logs -f ms-hr-areas
+docker build -t workshopms-microservice-employees:v1 .
+docker run -d --name humanresources-microservice-employees --network workshopms -p 8082:8080 workshopms-microservice-employees:v1
+docker logs -f humanresources-microservice-employees
