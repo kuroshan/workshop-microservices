@@ -6,7 +6,7 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://infra-microservice-discoveryserver:8761/eureka/
 
 zuul:
   ignoredServices: '*'
@@ -44,8 +44,8 @@ management:
 
 security:
   oauth:
-    client:
-      id: client_app
-      secrect: abcdef
     jwt:
       key: token_secrect_key
+
+info:
+  environment: development

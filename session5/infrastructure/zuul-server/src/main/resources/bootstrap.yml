@@ -3,4 +3,4 @@ spring:
     name: ms-hr-edge-service
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://infra-microservice-configserver:8888

@@ -12,6 +12,10 @@ docker build -t workshopms-microservice-discoveryserver:v1 .
 docker run -d --name infra-microservice-discoveryserver --network workshopms -p 8761:8761 workshopms-microservice-discoveryserver:v1
 docker logs -f infra-microservice-discoveryserver
 
+docker build -t workshopms-microservice-securityserver:v1 .
+docker run -d --name infra-microservice-securityserver --network workshopms -p 8081:8080 workshopms-microservice-securityserver:v1
+docker logs -f infra-microservice-securityservers
+
 
 
 docker build -t microservice-areas:v1 .

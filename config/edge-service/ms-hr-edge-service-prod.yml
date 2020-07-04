@@ -1,7 +1,2 @@
-server:
-  port: 9696
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8700/eureka/
+info:
+  environment: production
