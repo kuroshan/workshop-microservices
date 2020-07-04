@@ -1,7 +1,7 @@
-docker network create microservices
+docker network create workshopms
 
-docker build -t database-oracle:v1 .
-docker run -d --name db-infra-oracle --network microservices -p 1523:1521 -p 8083:8080 database-oracle:v1
+docker build -t workshopms-database-oracle:v1 .
+docker run -d --name db-infra-oracle --network workshopms -p 1523:1521 -p 8083:8080 workshopms-database-oracle:v1
 docker exec -it db-infra-oracle /bin/bash
 sqlplus sys/oracle@//localhost:1521/XE as sysdba
 @/home/taller_ms.sql oracle oracle hrpw SYSTEM TEMP /home/log/ localhost:1521/XE
