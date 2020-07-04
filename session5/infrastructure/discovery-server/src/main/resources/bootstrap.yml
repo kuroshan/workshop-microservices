@@ -3,4 +3,4 @@ spring:
     name: ms-hr-discovery-server
   cloud:
     config:
-      uri: http://ms-infra-config-server:8888
+      uri: http://infra-microservice-configserver:8888
