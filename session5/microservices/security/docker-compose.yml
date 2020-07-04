@@ -7,6 +7,8 @@ services:
     restart: always
     networks: 
       - workshopms
+    environment: 
+      SPRING_PROFILES_ACTIVE: default
 networks: 
   workshopms:
     external: 

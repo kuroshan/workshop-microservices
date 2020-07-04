@@ -50,4 +50,4 @@ docker-compose up -d
 
 docker-compose down
 
-
+docker-compose scale microservice-areas=4 microservice-employees=2
