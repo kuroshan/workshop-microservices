@@ -1,5 +1,12 @@
 version: '3.7'
 services: 
+  database-oracle:
+    image: workshopms-database-oracle:v1
+    ports: 
+      - "1521:1521"
+    restart: always
+    networks: 
+      - workshopms
   microservice-areas:
     image: workshopms-microservice-areas:v1
     ports: 
@@ -7,6 +14,11 @@ services:
     restart: always
     networks: 
       - workshopms
+    environment: 
+      SPRING_DATASOURCE_USERNAME: hr
+      SPRING_DATASOURCE_PASSWORD: hrpw
+    depends_on: 
+      - database-oracle
   microservice-employees:
     image: workshopms-microservice-employees:v1
     ports: 
@@ -14,7 +26,11 @@ services:
     restart: always
     networks: 
       - workshopms
+    environment: 
+      SPRING_DATASOURCE_USERNAME: hr
+      SPRING_DATASOURCE_PASSWORD: hrpw
     depends_on: 
+      - database-oracle
       - microservice-areas
 networks: 
   workshopms:

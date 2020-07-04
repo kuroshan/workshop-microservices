@@ -4,8 +4,8 @@ server:
 spring:
   datasource:
     url: jdbc:oracle:thin:@//database-oracle:1521/XE
-    username: hr
-    password: hrpw
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: oracle.jdbc.OracleDriver
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect

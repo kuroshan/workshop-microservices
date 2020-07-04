@@ -4,10 +4,6 @@
 
 docker network create workshopms
 
-docker build -t workshopms-database-oracle:v1 .
-docker run -d --name database-oracle --network workshopms -p 1521:1521 workshopms-database-oracle:v1
-docker logs -f database-oracle
-
 docker build -t workshopms-microservice-configserver:v1 .
 docker run -d --name microservice-configserver --network workshopms -p 8888:8888 workshopms-microservice-configserver:v1
 docker logs -f microservice-configserver
@@ -27,6 +23,10 @@ docker logs -f microservice-edgeservice
 docker build -t workshopms-microservice-users:v1 .
 docker run -d --name microservice-users --network workshopms -p 8081:8080 workshopms-microservice-users:v1
 docker logs -f microservice-users
+
+docker build -t workshopms-database-oracle:v1 .
+docker run -d --name database-oracle --network workshopms -p 1521:1521 workshopms-database-oracle:v1
+docker logs -f database-oracle
 
 docker build -t workshopms-microservice-areas:v1 .
 docker run -d --name microservice-areas --network workshopms -p 8082:8080 workshopms-microservice-areas:v1
