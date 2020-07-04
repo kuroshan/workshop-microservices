@@ -29,5 +29,5 @@ docker run -d --name humanresources-microservice-areas --network workshopms -p 8
 docker logs -f humanresources-microservice-areas
 
 docker build -t workshopms-microservice-employees:v1 .
-docker run -d --name humanresources-microservice-employees --network workshopms -p 8082:8080 workshopms-microservice-employees:v1
+docker run -d --name humanresources-microservice-employees --network workshopms -p 8083:8080 workshopms-microservice-employees:v1
 docker logs -f humanresources-microservice-employees
