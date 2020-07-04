@@ -9,8 +9,8 @@ services:
       - workshopms
   microservice-areas:
     image: workshopms-microservice-areas:v1
-    ports: 
-      - "8082:8080"
+    #ports: 
+    #  - "8082:8080"
     restart: always
     networks: 
       - workshopms
@@ -23,8 +23,8 @@ services:
       - database-oracle
   microservice-employees:
     image: workshopms-microservice-employees:v1
-    ports: 
-      - "8083:8080"
+    #ports: 
+    #  - "8083:8080"
     restart: always
     networks: 
       - workshopms

@@ -2,8 +2,8 @@ version: '3.7'
 services: 
   microservice-users:
     image: workshopms-microservice-users:v1
-    ports: 
-      - "8081:8080"
+    #ports: 
+    #  - "8081:8080"
     restart: always
     networks: 
       - workshopms
