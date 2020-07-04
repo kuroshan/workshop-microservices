@@ -61,6 +61,19 @@
 			"id": "e69ffc04-f6d3-b499-ad63-83f79ef0384b"
 		},
 		{
+			"name": "areas",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"9ccdf0c4-6315-24ff-9e58-6ddcaaeaf1c0",
+				"ccc17c11-6561-4102-c68e-9e0beb71e8b4"
+			],
+			"owner": 0,
+			"folder": "e73fbb67-624a-f6fc-b63a-f636af3af837",
+			"folders_order": [],
+			"id": "192f8e87-dd64-849c-6112-f170a3d0a4ff"
+		},
+		{
 			"name": "circuit breaker",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -112,6 +125,19 @@
 			"id": "e202563a-1201-5eec-69c4-62e7cd190c50"
 		},
 		{
+			"name": "employees",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"28615e8f-de56-57d7-c4db-a5bd08603330",
+				"3de12c19-d9ef-c58a-98f6-f9b2c3b23d12"
+			],
+			"owner": 0,
+			"folder": "e73fbb67-624a-f6fc-b63a-f636af3af837",
+			"folders_order": [],
+			"id": "07230434-0d5b-9d4f-daef-8a57ae883cce"
+		},
+		{
 			"name": "employess",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -134,6 +160,18 @@
 			"folder": "b18647be-d262-b989-ec83-60227d05bae7",
 			"folders_order": [],
 			"id": "1960228b-8256-226a-6bee-327ba25608b2"
+		},
+		{
+			"name": "security-server",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"dfd48ad0-1d92-acd8-8c5a-245f0fac7c1d"
+			],
+			"owner": 0,
+			"folder": "e73fbb67-624a-f6fc-b63a-f636af3af837",
+			"folders_order": [],
+			"id": "c72034f4-9b48-83c8-723f-3debe85fca1e"
 		},
 		{
 			"name": "session1",
@@ -194,6 +232,20 @@
 			"id": "b18647be-d262-b989-ec83-60227d05bae7"
 		},
 		{
+			"name": "session5",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [],
+			"owner": 0,
+			"folders_order": [
+				"c72034f4-9b48-83c8-723f-3debe85fca1e",
+				"6e08e5d8-b19f-319b-9453-7406b33b3f44",
+				"192f8e87-dd64-849c-6112-f170a3d0a4ff",
+				"07230434-0d5b-9d4f-daef-8a57ae883cce"
+			],
+			"id": "e73fbb67-624a-f6fc-b63a-f636af3af837"
+		},
+		{
 			"name": "swagger",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -219,6 +271,18 @@
 			"id": "b1fa8db4-4ae4-4935-1f99-27769ab5c350"
 		},
 		{
+			"name": "users",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"order": [
+				"73cf84cf-2adc-f643-6f60-615f11bd94d7"
+			],
+			"owner": 0,
+			"folder": "e73fbb67-624a-f6fc-b63a-f636af3af837",
+			"folders_order": [],
+			"id": "6e08e5d8-b19f-319b-9453-7406b33b3f44"
+		},
+		{
 			"name": "zuul server",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
@@ -235,7 +299,8 @@
 		"56c0662a-ba45-2550-9155-84784268fff1",
 		"d5e6c028-7b39-14ae-3df8-cbd7cd363fe5",
 		"ee769ed6-f8b8-b933-f32c-11f3707bba91",
-		"b18647be-d262-b989-ec83-60227d05bae7"
+		"b18647be-d262-b989-ec83-60227d05bae7",
+		"e73fbb67-624a-f6fc-b63a-f636af3af837"
 	],
 	"timestamp": 1591414881532,
 	"owner": 0,
@@ -350,6 +415,37 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86"
+		},
+		{
+			"id": "28615e8f-de56-57d7-c4db-a5bd08603330",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4NDQwNTgsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiNzY0NmY4MjQtY2M1OS00MGY5LWE3ZGYtNmFiNTllYWY2MDY0IiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.RBRnqN79qTqABTxflGYO7Mbz74MKt2hxYQCp_Ce5yJk\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4NDQwNTgsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiNzY0NmY4MjQtY2M1OS00MGY5LWE3ZGYtNmFiNTllYWY2MDY0IiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.RBRnqN79qTqABTxflGYO7Mbz74MKt2hxYQCp_Ce5yJk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/payroll/employees",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "list employees",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593841069799,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "07230434-0d5b-9d4f-daef-8a57ae883cce"
 		},
 		{
 			"id": "287d10b7-5b7c-8d04-8b8a-73d03b02b43d",
@@ -498,6 +594,36 @@
 			"helperAttributes": {},
 			"time": 1593554819127,
 			"name": "http://localhost:9090/api/hr/users/users",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"responses": []
+		},
+		{
+			"id": "3de12c19-d9ef-c58a-98f6-f9b2c3b23d12",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4NDQwNTgsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiNzY0NmY4MjQtY2M1OS00MGY5LWE3ZGYtNmFiNTllYWY2MDY0IiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.RBRnqN79qTqABTxflGYO7Mbz74MKt2hxYQCp_Ce5yJk\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4NDQwNTgsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiNzY0NmY4MjQtY2M1OS00MGY5LWE3ZGYtNmFiNTllYWY2MDY0IiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.RBRnqN79qTqABTxflGYO7Mbz74MKt2hxYQCp_Ce5yJk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/payroll/employees/110",
+			"folder": "07230434-0d5b-9d4f-daef-8a57ae883cce",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593841102042,
+			"name": "get employee",
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
 			"responses": []
@@ -689,6 +815,36 @@
 			"folder": "af291cbf-f1b2-4b44-138c-df81f6f9f52e"
 		},
 		{
+			"id": "73cf84cf-2adc-f643-6f60-615f11bd94d7",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4NTAxODMsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiOGQ4ZjcxYTMtZDcwZi00NTZmLWJkODYtM2U1ZmYxYWIzNWY1IiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.a04tM2ySTbmJtDlixqPTPG7KwlKvmQ3ilSlFryGCJgI\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4NTAxODMsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiOGQ4ZjcxYTMtZDcwZi00NTZmLWJkODYtM2U1ZmYxYWIzNWY1IiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.a04tM2ySTbmJtDlixqPTPG7KwlKvmQ3ilSlFryGCJgI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/users/users",
+			"folder": "6e08e5d8-b19f-319b-9453-7406b33b3f44",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593846615581,
+			"name": "get users",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"responses": []
+		},
+		{
 			"id": "74ed3e8e-880f-7e99-4d32-7b9cdc89daac",
 			"headers": "",
 			"headerData": [],
@@ -767,6 +923,30 @@
 			"folder": "d7801198-2050-4909-f0b8-a48f7b9c398f"
 		},
 		{
+			"id": "9ccdf0c4-6315-24ff-9e58-6ddcaaeaf1c0",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:9090/api/hr/areas/departments",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "list departments",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593839484956,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "192f8e87-dd64-849c-6112-f170a3d0a4ff"
+		},
+		{
 			"id": "a1833329-c038-5c5a-fe11-597d55fb3d20",
 			"headers": "",
 			"headerData": [],
@@ -815,6 +995,36 @@
 			"collection_id": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee"
 		},
 		{
+			"id": "ccc17c11-6561-4102-c68e-9e0beb71e8b4",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4NTAyNTMsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiOTAxOTRjZWUtMmY4MS00ODg1LWI4MjctODk2OWEyOTk2NTUzIiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.2bhfusuwD41vSOPSwG81DZRSxtyHuCn2gjg_TjJveeg\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4NTAyNTMsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiOTAxOTRjZWUtMmY4MS00ODg1LWI4MjctODk2OWEyOTk2NTUzIiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.2bhfusuwD41vSOPSwG81DZRSxtyHuCn2gjg_TjJveeg",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/areas/departments/10",
+			"folder": "192f8e87-dd64-849c-6112-f170a3d0a4ff",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593846673464,
+			"name": "get department",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"responses": []
+		},
+		{
 			"id": "cdcec7a6-5a9e-4cc5-de4d-3e76db799e27",
 			"headers": "",
 			"headerData": [],
@@ -859,6 +1069,62 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "e69ffc04-f6d3-b499-ad63-83f79ef0384b"
+		},
+		{
+			"id": "dfd48ad0-1d92-acd8-8c5a-245f0fac7c1d",
+			"headers": "Authorization: Basic Y2xpZW50X2FwcDphYmNkZWY=\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic Y2xpZW50X2FwcDphYmNkZWY=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/security/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "username",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593838550107,
+			"name": "get token",
+			"description": "",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"responses": []
 		},
 		{
 			"id": "e7550f4c-4bf8-d2ab-6f2d-ee667a0f774c",

@@ -1,0 +1,22 @@
+version: '3.7'
+services: 
+  microservice-areas:
+    image: workshopms-microservice-areas:v1
+    ports: 
+      - "8082:8080"
+    restart: always
+    networks: 
+      - workshopms
+  microservice-employees:
+    image: workshopms-microservice-employees:v1
+    ports: 
+      - "8083:8080"
+    restart: always
+    networks: 
+      - workshopms
+    depends_on: 
+      - microservice-areas
+networks: 
+  workshopms:
+    external: 
+      name: infrastructure_workshopms
