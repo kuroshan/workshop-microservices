@@ -66,7 +66,8 @@
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
 			"order": [
 				"9ccdf0c4-6315-24ff-9e58-6ddcaaeaf1c0",
-				"ccc17c11-6561-4102-c68e-9e0beb71e8b4"
+				"ccc17c11-6561-4102-c68e-9e0beb71e8b4",
+				"2e3cc46b-cc71-00e1-44b3-1013f8897f09"
 			],
 			"owner": 0,
 			"folder": "e73fbb67-624a-f6fc-b63a-f636af3af837",
@@ -130,7 +131,8 @@
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
 			"order": [
 				"28615e8f-de56-57d7-c4db-a5bd08603330",
-				"3de12c19-d9ef-c58a-98f6-f9b2c3b23d12"
+				"3de12c19-d9ef-c58a-98f6-f9b2c3b23d12",
+				"f126452b-7f3d-29da-844f-63f126ccb333"
 			],
 			"owner": 0,
 			"folder": "e73fbb67-624a-f6fc-b63a-f636af3af837",
@@ -275,7 +277,8 @@
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
 			"order": [
-				"73cf84cf-2adc-f643-6f60-615f11bd94d7"
+				"73cf84cf-2adc-f643-6f60-615f11bd94d7",
+				"4fb32303-771d-ac7b-fdc6-a2236f7f1610"
 			],
 			"owner": 0,
 			"folder": "e73fbb67-624a-f6fc-b63a-f636af3af837",
@@ -472,6 +475,37 @@
 			"folder": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86"
 		},
 		{
+			"id": "2e3cc46b-cc71-00e1-44b3-1013f8897f09",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4ODM0MDEsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiZGYyNzNkYzktODc0YS00NTRlLTg2Y2EtOGJlZjNkNTM1NDFjIiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.29hY4h2LnJJqAigBFZXVgds7CNfTC2uMGA8ljR5TODA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4ODM0MDEsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiZGYyNzNkYzktODc0YS00NTRlLTg2Y2EtOGJlZjNkNTM1NDFjIiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.29hY4h2LnJJqAigBFZXVgds7CNfTC2uMGA8ljR5TODA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/areas/actuator/info",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "info",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593879844037,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "192f8e87-dd64-849c-6112-f170a3d0a4ff"
+		},
+		{
 			"id": "2f536fe6-2443-218b-aea6-9bc8872de213",
 			"headers": "",
 			"headerData": [],
@@ -650,6 +684,37 @@
 			"description": "",
 			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
 			"responses": []
+		},
+		{
+			"id": "4fb32303-771d-ac7b-fdc6-a2236f7f1610",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4ODM1MzQsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiNzY4MWVmOGQtZjcwOC00MDgxLWI5NzItM2YyMjk3NGM1NmZhIiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.d8EpyxhVNb_cRsuFpmYHxgNSb2tsoWWKFx8tUUmhTg8\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4ODM1MzQsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiNzY4MWVmOGQtZjcwOC00MDgxLWI5NzItM2YyMjk3NGM1NmZhIiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.d8EpyxhVNb_cRsuFpmYHxgNSb2tsoWWKFx8tUUmhTg8",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/users/actuator/info",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "info",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593879963840,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "6e08e5d8-b19f-319b-9453-7406b33b3f44"
 		},
 		{
 			"id": "54a237c3-a1b4-3b29-cc98-3fa3646080b0",
@@ -1088,6 +1153,7 @@
 				}
 			],
 			"url": "http://localhost:9090/api/hr/security/oauth/token",
+			"folder": "c72034f4-9b48-83c8-723f-3debe85fca1e",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -1220,6 +1286,37 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "27e8f8df-39e0-c7b2-10f1-6ab508e8ce86"
+		},
+		{
+			"id": "f126452b-7f3d-29da-844f-63f126ccb333",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4ODM0MDEsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiZGYyNzNkYzktODc0YS00NTRlLTg2Y2EtOGJlZjNkNTM1NDFjIiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.29hY4h2LnJJqAigBFZXVgds7CNfTC2uMGA8ljR5TODA\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJleHAiOjE1OTM4ODM0MDEsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iLCJST0xFX1VTRVIiXSwianRpIjoiZGYyNzNkYzktODc0YS00NTRlLTg2Y2EtOGJlZjNkNTM1NDFjIiwiZW1haWwiOiJhZG1pbkBrdXJvc2hhbi5jb20iLCJjbGllbnRfaWQiOiJjbGllbnRfYXBwIn0.29hY4h2LnJJqAigBFZXVgds7CNfTC2uMGA8ljR5TODA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:9090/api/hr/payroll/actuator/info",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5d850d14-e2f9-4b8f-60cf-c828cde6cbee",
+			"data": null,
+			"dataMode": "params",
+			"name": "info",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593879889519,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "07230434-0d5b-9d4f-daef-8a57ae883cce"
 		},
 		{
 			"id": "f718e349-e93f-13ff-6bf5-02979cd9fac1",
