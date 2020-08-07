@@ -24,7 +24,7 @@ http://localhost:8888/ms-hr-discovery-server/default
 http://localhost:8888/ms-hr-discovery-server/prod
 
 -- users
-https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.2.8.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.kuroshan.workshop.ms.hr&artifactId=ms-users&name=Microservice%20Users&description=HR%20Microservice%20Users&packageName=com.kuroshan.workshop.ms.hr.ms.users&dependencies=web,actuator,data-jpa,h2,lombok,data-rest,cloud-eureka,cloud-config-client
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.3.2.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.kuroshan.workshop.ms.hr&artifactId=ms-users&name=Microservice%20Users&description=HR%20Microservice%20Users&packageName=com.kuroshan.workshop.ms.hr.ms.users&dependencies=web,actuator,data-jpa,h2,lombok,data-rest,cloud-eureka,cloud-config-client
 
 -- security
 https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.3.2.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.kuroshan.workshop.ms.hr&artifactId=security-server&name=Security%20Server&description=HR%20Microservice%20Security%20Server%20-%20OAuth2&packageName=com.kuroshan.workshop.ms.hr.security.server&dependencies=web,actuator,lombok,cloud-eureka,cloud-config-client,cloud-feign,cloud-oauth2
