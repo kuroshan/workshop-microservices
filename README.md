@@ -30,26 +30,7 @@ https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.3.2
 https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.3.2.RELEASE&packaging=jar&jvmVersion=1.8&groupId=com.kuroshan.workshop.ms.hr&artifactId=security-server&name=Security%20Server&description=HR%20Microservice%20Security%20Server%20-%20OAuth2&packageName=com.kuroshan.workshop.ms.hr.security.server&dependencies=web,actuator,lombok,cloud-eureka,cloud-config-client,cloud-feign,cloud-oauth2
 
 
-hystrix:
-  command:
-    getEmployeeCommand:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 1000
-          strategy: THREAD
-      circuitBreaker:
-        requestVolumeThreshold: 20
-        sleepWindowInMilliseconds: 5000
-        errorThresholdPercentage: 50
-      metrics:
-        rollingStats:
-          timeInMilliseconds: 10000
-        rollingPercentile:
-          timeInMilliseconds: 60000
-        healthSnapshot:
-          intervalInMilliseconds: 500
-      fallback:
-        isolation:
-          semaphore:
-            maxConcurrentRequests: 10
+# mvn clean package spring-boot:run -Dspring-boot.run.arguments=--server.port=9001
+# mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=9002
+# mvn spring-boot:run -Dspring-boot.run.profiles=prod
+
